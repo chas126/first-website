@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="base.css">
+<title>事業内容｜株式会社　今日のご飯</title>
+<script src="sample.js"></script>
+</head>
+<body>
+	<div id="pagebody">
+
+		<!--ヘッダー-->
+		<div id="header">
+			<h1><a href="index.html.html"><img src="images/gohan.png" alt="株式会社　今日のご飯"></a></h1>
+		</div>
+	
+		
+	
+	<!-- メインメニュー -->
+		<ul id="menu">
+		 <li><a href="index.html.html">ホーム</a></li>
+		 <li><a href="profile.html">企業情報</a></li>
+		 <li><a href="zigyounaiyou.html.html">事業内容</a></li>
+		 <li><a href="news.html.html">最新ニュース</a></li>
+		 <li><a href="saiyouinfo.html.html">採用情報</a></li>
+		 <li><a href="contact_iframe.html">お問い合わせ</a></li>
+		 </ul>
+	
+<div id="info">	
+<h1>事業内容</h1>
+<img src="images/net1.jpg" name="network">
+</div>
+
+<script type="text/javascript">
+img = new Array("images/net1.jpg","images/net2.jpg","images/net3.jpg","images/net4.jpg"); //*1
+count = -1; //*2
+imgTimer();
+
+function imgTimer() {
+	//画像番号
+	count++; //*3
+	//画像の枚数確認
+	if (count == img.length) count = 0; //*4
+	//画像出力
+	document.network.src = img[count]; //*5
+	//次のタイマー呼びだし
+
+	setTimeout("imgTimer()",2000); //*6
+}
+</script>
+</body>
+</html>
