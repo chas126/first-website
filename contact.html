@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="base.css">
+<title>お問い合わせ | 株式会社　今日のご飯</title>
+</head>
+<body>
+    <div id="pagebody">
+
+    <!--ヘッダー-->
+    <div id="header">
+        <h1><a href="index.html.html"><img src="images/gohan.png" alt="株式会社　今日のご飯"></a></h1>
+    </div>
+
+    
+
+<!-- メインメニュー -->
+    <ul id="menu">
+     <li><a href="index.html.html">ホーム</a></li>
+     <li><a href="profile.html">企業情報</a></li>
+     <li><a href="zigyounaiyou.html.html">事業内容</a></li>
+     <li><a href="news.html.html">最新ニュース</a></li>
+     <li><a href="saiyouinfo.html.html">採用情報</a></li>
+     <li><a href="contact_iframe.html">お問い合わせ</a></li>
+     </ul>
+
+<!--ヘッダー画像-->
+     <div id="img_contact">
+     <img src="./images/img_contact1.jpg" />
+    </div>
+
+<!-- サブメニュー（左カラム） -->
+	<div id="submenu">
+	<h2>お問い合わせ</h2>
+	<ul>
+		<li><a href="#info0001">フォームからの問い合わせ</a></li>
+		<li><a href="#info0002">メールでの問い合わせ</a></li>
+		<li><a href="#info0003">お電話での問い合わせ</a></li>
+	</ul>
+</div>
+
+<!-- インフォメーション（右カラム） -->
+<div id="info">
+    
+    　<h3 id="info0001">フォームからの問い合わせ</h3>
+        <form method="post" action="xxxxxxxx.php" id="form1" name="form1">
+		<table class="profile">
+		<tr>
+		<th>お問合せ区分</th>
+		<td>
+			<label><input type="radio" name="sort" value="1">商品に関するお問合せ</label><br>
+			<label><input type="radio" name="sort" value="2">採用に関するお問合せ</label><br>
+			<label><input type="radio" name="sort" value="99">その他のお問合せ</label>
+		</td>
+		</tr>
+		<tr>
+		<th>メールアドレス</th>
+		<td><input type="email" size="30" name="mail" id="mail" required></td>
+		</tr>
+		<tr>
+		<th>お名前</th>
+		<td><input type="text" size="20" name="namae" id="namae" required></td>
+		</tr>
+		<tr>
+		<th>お問合せの内容</th>
+		<td><textarea name="naiyou" cols="50" rows="8" placeholder="できるだけ詳しくご記入お願いいたします。" required></textarea></td>
+		</tr>
+		</table>
+		<input type="hidden" name="q" value="1">
+		<p><input type="submit" value="送信する"></p>
+		</form> 
+        <hr>
+    　 
+    　<h3 id="info0002">メールでのお問い合わせ</h3>
+    　　<p>
+		<a href="mailto: xxx@xxxxxxxxxx.xxx?subject=ウェブサイトからのお問合せ&body=お問合せ区分をご記入ください（商品・採用・その他）：">xxx@xxxxxxxxxx.xxx</a>
+		までメールをお送りください。
+		</p>
+     　 <hr>
+   　 <h3 id="info0003">電話でのお問い合わせ</h3>
+        <a href="tel:000-0000-0000"><h4>>電話番号　000-0000-0000</h4></a>
+		<div class="remarks">
+		<h4>受付時間</h4>
+		受付時間は、平日午前9時から午後18時までとなります。<br>
+		土日祝日は対応できない場合がございますのでご了承ください。
+</div>
+		
+       <hr>
+	   <a href="contact_iframe.html" onMouseOver="window.status='JavaScriptのトップページへ'; return true;" onMouseOut="window.status=''; return true;">トップへ</a> 
+        </div>
+
+       <!--フッタ-->
+       <div id="footer"><small>Copyright (c) 株式会社　今日のご飯 All Rights Reserved.</small></div>
+
+</div>      
+</body>
+</html>
+
+<!--【ボックス全体の横幅】 ＝ （内容領域の横幅200px）＋（左右マージン5px×2）＋（左右パディング10px×2）＋（左右ボーダー1px×2） ＝ 232px
+    【ボックス全体の高さ】 ＝ （内容領域の高さ100px）＋（上下マージン5px×2）＋（上下パディング10px×2）＋（上下ボーダー1px×2） ＝ 132px-->
